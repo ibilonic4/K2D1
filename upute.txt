@@ -1,0 +1,20 @@
+1 upalit mysql u xampu
+2.create database imebaze default character set utf8;
+use imebaze;
+grant all privileges on imebaze.* to 'p2'@'localhost' identified by 'julija'; (PAZI NA RAZMAKE)
+ 
+kad želiš provjerit jesu li tablice odrađene select * from imetabele;
+napraviš prvo model, pa kontrole i onda kreiraš tablice, potom promjeniš na update u configu i radiš view
+
+na svim formama u Viewu, osim Izbornika, desni klik-> properties -> promjenit na dispose
+
+u propertiesu također za svaki button i opcenito parametar selektirat eventove i promijenit ime varijable i tip podataka koji prima (u slučaju liste i komboboxa)
+
+kad radite view ne zaboravite implementirat interface na sve osim Izbornik te napravit pravilne importe (promjenit u properties ono što je u <> za sve liste i comboboxeve te nakon toga importat )
+
+prikazivat ce vam hrpu grešaka, većinu ih se riješi importom modela koji je zadan u listi i comboboxu, neke znaju bit produkt kopiranja pa ce vam tu i tamo falit zagrada 
+to možete i sami provjerit, također pri kopiranju ce vam ostat imena varijabli pa ih promijenite.
+
+to su uglavnom sve moguće greške, uvijek možete hooverat mišem kad vam prikaze grešku pa ce vam program ukazat što točno ne valja.
+
+ako vam kod projekta prikazuje zuti trokut, desni klik -> build with dependancies
